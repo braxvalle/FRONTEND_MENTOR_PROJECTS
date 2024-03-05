@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+    background-color: var(--Yellow);
+    width: 100%;
+}
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+}
+
+.item {
+    background-color: var(--White);
+    padding: 1rem;
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 7px 4px 0px 0px #000000;
+    border-radius: 1rem;
+}
+
+.image {
+    width: 100%;
+}
+
+.image img {
+    border-radius: 1rem;
+    width: 100%;
+}
+a button{
+    padding: 0.3rem 0.5rem;
+    background-color: var(--Yellow);
+    border: none;
+    border-radius: 0.3rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+}
+
+h4 {
+    margin: .5rem 0;
+}
+
+h2 {
+    margin: 0.9rem 0;
+    &:hover {
+        cursor: pointer;
+        color: var(--Yellow);
+    }
+}
+
+p {
+    font-size: 16px;
+    color: var(--Grey);
+}
+
+.avator {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.avator img{
+    width: 35px;
+}
+
+.avator p {
+    font-weight: 900;
+    font-size: 15px;
+    color: var(--Black);
+}
