@@ -65,7 +65,7 @@ p {
     margin: 0 auto;
 }
 
-.dice {
+#dice {
     display: flex;
     align-items: center;
     position: absolute;
