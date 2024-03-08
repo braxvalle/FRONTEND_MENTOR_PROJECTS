@@ -35,14 +35,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     gap: 4rem;
 }
 
 .card-item {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     flex-direction: column;
+    max-width: 600px;
+    width: 100%;
     gap: 1.5rem;
 }
 
@@ -51,8 +54,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    width: 100%;
+    height: 230px;
     border-radius: 1rem;
     padding: 1.5rem;
     display: flex;
@@ -88,8 +92,9 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    width: 100%;
+    height: 230px;
     border-radius: 1rem;
     display: flex;
     justify-content: flex-end;
@@ -108,12 +113,12 @@ body {
 }
 
 .form {
+    max-width: 300px;
     width: 100%;
     padding: 1rem;
 }
 
 form {
-    max-width: 300px;
     width: 100%;
 }
 
@@ -149,6 +154,13 @@ form label {
     gap: 1rem;
 }
 
+.date input {
+    width: 50%;
+}
+
+.cvc {
+    width: 100%;
+}
 button {
     margin: 1rem 0;
     padding: 0.5rem;
@@ -157,4 +169,8 @@ button {
     color: var(--White);
     border: none;
     border-radius: 0.3rem;
+}
+
+@media (max-width: 420px) {
+    
 }
