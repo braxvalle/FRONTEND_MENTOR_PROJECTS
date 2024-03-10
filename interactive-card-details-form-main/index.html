@@ -32,28 +32,35 @@
 
       <div class="form">
         <form id="form" action="#">
+
           <div class="inputs">
             <label for="name">Cardholder Name</label>
             <input id="name" type="text" placeholder="e.g. Jane Appleseed">
           </div>
+          <div class="error" id="error-name"></div>
+
           <div class="inputs">
             <label for="card-Number">Card Number</label>
             <input id="card-Number" type="text" placeholder="e.g. 1234 5678 9123 0000">
           </div>
+          <div id="error-no" class="error"></div>
 
           <div class="date-details">
             <div class="date">
               <label for="Exp. Date (MM/YY)">Exp. Date (MM/YY)</label>
               <div class="date-inputs">
-                <input type="text" placeholder="MM">
-                <input type="text" placeholder="YY">
+                <input id="month" type="text" placeholder="MM">
+                <input id="year" type="text" placeholder="YY">
               </div>
+              <div id="error-date" class="error"></div>
+
             </div>
             <div class="cvc">
               <label for="CVC">CVC</label>
               <input type="text" placeholder=" e.g. 123">
             </div>
           </div>
+          <div id="error-cvc" class="error"></div>
           <button id="btn" type="submit">Confirm</button>
         </form>
       </div>

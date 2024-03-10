@@ -24,20 +24,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1440px;
-    margin: 0 auto;
     width: 100%;
     height: 100dvh;
     background-image: url(./images/bg-main-desktop.png);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: left;
 }
 
 .container {
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     gap: 4rem;
 }
 
@@ -172,6 +172,11 @@ button {
     border: none;
     border-radius: 0.3rem;
 }
+.error {
+    color: var(--Red-input-errors);
+    font-size: 12px;
+}
+
 
 @media (max-width: 420px) {
     
