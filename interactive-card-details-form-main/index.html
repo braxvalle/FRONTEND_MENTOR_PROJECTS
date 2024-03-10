@@ -30,7 +30,7 @@
       </div>
 
 
-      <div class="form">
+      <div class="form" id="form-container">
         <form id="form" action="#">
 
           <div class="inputs">
@@ -52,21 +52,23 @@
                 <input id="month" type="text" placeholder="MM">
                 <input id="year" type="text" placeholder="YY">
               </div>
-              <div id="error-date" class="error"></div>
-
+              
             </div>
             <div class="cvc">
               <label for="CVC">CVC</label>
-              <input type="text" placeholder=" e.g. 123">
+              <input id="cvc" type="text" placeholder=" e.g. 123">
             </div>
           </div>
-          <div id="error-cvc" class="error"></div>
+          <div class="details-error">
+            <div id="error-date" class="error"></div>
+            <div id="error-cvc" class="error"></div>
+          </div>
           <button id="btn" type="submit">Confirm</button>
         </form>
       </div>
       
       <!-- Completed state start -->
-      <div class="thanks">
+      <div class="thanks" id="thanks-container">
         <img src="./images/icon-complete.svg" alt="">
         <h2>Thank you!</h2>
         <p> We've added your card details</p>
