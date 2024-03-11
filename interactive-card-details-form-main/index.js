@@ -1,6 +1,14 @@
 const form = document.getElementById("form");
 const container = document.getElementById("form-container");
 const thanks = document.getElementById("thanks-container");
+const name = document.getElementById("name");
+const errorName = document.getElementById("error-name");
+
+const displayName = document.getElementById("display-name");
+
+name.addEventListener("input", () => {
+  displayName.textContent = name.value;
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -14,8 +22,6 @@ form.addEventListener("submit", (e) => {
 function validateForm() {
   let isValid = true;
 
-  const name = document.getElementById("name");
-  const errorName = document.getElementById("error-name");
   if (name.value === "") {
     errorName.textContent = "Please enter your name";
     isValid = false;
