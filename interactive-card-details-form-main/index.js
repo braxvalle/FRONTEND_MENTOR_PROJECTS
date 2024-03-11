@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const form = document.getElementById("form");
 const container = document.getElementById("form-container");
 const thanks = document.getElementById("thanks-container");
@@ -51,3 +52,14 @@ function validateForm() {
   }
   return isValid;
 }
+=======
+const form = document.getElementById('form');
+const name = document.getElementById('name');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    if(name === '') {
+        console.log('Please fill all the required fields')
+    }
+})
+>>>>>>> f2fa45a6d65d64586528e1b07df0930e4aedb3ca
