@@ -28,14 +28,16 @@ body {
     height: 100dvh;
     background-image: url(./images/bg-main-desktop.png);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: left;
 }
 
 .container {
+    max-width: 1440px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     gap: 4rem;
 }
 
@@ -113,7 +115,7 @@ body {
 }
 
 .form {
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     padding: 1rem;
 }
@@ -130,10 +132,11 @@ form {
     width: 100%;
     outline: none;
     border-radius: 0.4rem;
-    padding: 0.4rem 0.5rem;
+    padding: 0.8rem 0.7rem;
     border: 1px solid var(--Light-grayish-violet);
-    margin: 5px 0 10px 0;
-    font-size: 11px;
+    margin: 5px 0 5px 0;
+    font-size: 12px;
+    font-weight: 600;
 }
 
 form label {
@@ -163,12 +166,22 @@ form label {
 }
 button {
     margin: 1rem 0;
-    padding: 0.5rem;
+    padding: 0.7rem;
     width: 100%;
     background-color: var(--Very-dark-violet);
     color: var(--White);
     border: none;
     border-radius: 0.3rem;
+    font-size: 16px;
+}
+.error {
+    color: var(--Red-input-errors);
+    font-size: 12px;
+}
+
+.details-error {
+    display: flex;
+    justify-content: space-around;
 }
 
 @media (max-width: 420px) {
