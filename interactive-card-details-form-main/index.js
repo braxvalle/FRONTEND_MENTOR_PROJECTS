@@ -25,7 +25,7 @@ form.addEventListener("submit", (e) => {
 
   if (validateForm()) {
     container.style.display = "none";
-    thanks.style.display = "block";
+    thanks.style.display = "flex";
   }
 });
 
