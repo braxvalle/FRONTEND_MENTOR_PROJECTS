@@ -34,6 +34,7 @@ function validateForm() {
 
   if (name.value === "") {
     errorName.textContent = "Please enter your name";
+    name.style.border = "1px solid red"
     isValid = false;
   } else {
     errorName.textContent = "";
@@ -43,6 +44,7 @@ function validateForm() {
   const errorNo = document.getElementById("error-no");
   if (cardNo.value === "") {
     errorNo.textContent = "Please enter your card number";
+    cardNo.style.border = "1px solid red"
     isValid = false;
   } else if (!/^\d+$/.test(cardNo.value)) {
     errorNo.textContent = "Wrong format numbers only";
@@ -54,6 +56,7 @@ function validateForm() {
   const errorCVC = document.getElementById("error-cvc");
   if (cvc.value === "") {
     errorCVC.textContent = "Can't be black";
+    cvc.style.border = "1px solid red"
     isValid = false;
   } else {
     errorCVC.textContent = "";
@@ -62,6 +65,8 @@ function validateForm() {
   const errorDate = document.getElementById('error-date');
   if(year.value === '' || month.value === '') {
     errorDate.textContent = "Can't be blank";
+    year.style.border = "1px solid red"
+    month.style.border = "1px solid red"
     isValid = false;
   } else {
     errorDate.textContent = '';
