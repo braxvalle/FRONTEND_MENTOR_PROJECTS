@@ -3,12 +3,22 @@ const container = document.getElementById("form-container");
 const thanks = document.getElementById("thanks-container");
 const name = document.getElementById("name");
 const errorName = document.getElementById("error-name");
+const cvc = document.getElementById("cvc");
+const month = document.getElementById("month");
+const year = document.getElementById("year");
 
 const displayName = document.getElementById("display-name");
+const cvcText = document.getElementById('cvc-text');
+const monthText = document.getElementById('month-text');
+const yearText = document.getElementById('year-text');
 
 name.addEventListener("input", () => {
   displayName.textContent = name.value;
 });
+
+cvc.addEventListener('input', () => {
+  cvcText.textContent = cvc.value;
+})
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -40,8 +50,7 @@ function validateForm() {
   } else {
     errorNo.textContent = "";
   }
-
-  const cvc = document.getElementById("cvc");
+  
   const errorCVC = document.getElementById("error-cvc");
   if (cvc.value === "") {
     errorCVC.textContent = "Can't be black";
@@ -49,5 +58,14 @@ function validateForm() {
   } else {
     errorCVC.textContent = "";
   }
+
+  const errorDate = document.getElementById('error-date');
+  if(year.value === '' || month.value === '') {
+    errorDate.textContent = "Can't be blank";
+    isValid = false;
+  } else {
+    errorDate.textContent = '';
+  }
+
   return isValid;
 }

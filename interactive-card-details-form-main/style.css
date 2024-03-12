@@ -181,7 +181,8 @@ button {
 
 .details-error {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 7.3rem;
 }
 
 @media (max-width: 420px) {
