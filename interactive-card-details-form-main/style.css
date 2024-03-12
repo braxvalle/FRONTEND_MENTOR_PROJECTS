@@ -197,5 +197,13 @@ button {
 }
 
 @media (max-width: 420px) {
-    
+    .main-container {
+        background-image: url(./images/bg-main-mobile.png);
+        background-position: top;
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
 }

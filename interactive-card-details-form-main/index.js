@@ -6,11 +6,13 @@ const errorName = document.getElementById("error-name");
 const cvc = document.getElementById("cvc");
 const month = document.getElementById("month");
 const year = document.getElementById("year");
+const cardNo = document.getElementById("card-Number");
 
 const displayName = document.getElementById("display-name");
 const cvcText = document.getElementById('cvc-text');
 const monthText = document.getElementById('month-text');
 const yearText = document.getElementById('year-text');
+const cardNumber = document.getElementById('card-number');
 
 name.addEventListener("input", () => {
   displayName.textContent = name.value;
@@ -18,6 +20,18 @@ name.addEventListener("input", () => {
 
 cvc.addEventListener('input', () => {
   cvcText.textContent = cvc.value;
+})
+
+cardNo.addEventListener('input', () => {
+  cardNumber.textContent = cardNo.value;
+})
+
+month.addEventListener('input', () => {
+  monthText.textContent = month.value
+})
+
+year.addEventListener('input', () => {
+  yearText.textContent = year.value
 })
 
 form.addEventListener("submit", (e) => {
@@ -39,8 +53,7 @@ function validateForm() {
   } else {
     errorName.textContent = "";
   }
-
-  const cardNo = document.getElementById("card-Number");
+  
   const errorNo = document.getElementById("error-no");
   if (cardNo.value === "") {
     errorNo.textContent = "Please enter your card number";
@@ -49,6 +62,8 @@ function validateForm() {
   } else if (!/^\d+$/.test(cardNo.value)) {
     errorNo.textContent = "Wrong format numbers only";
     isValid = false;
+  } else if (cardNo.value.length !== 16) {
+    errorNo.textContent = "Card number must be 16 Numbers"
   } else {
     errorNo.textContent = "";
   }
