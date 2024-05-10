@@ -205,9 +205,11 @@ button {
     .container {
         flex-direction: column;
         padding: 2rem 0;
+        gap: 5rem;
     }
     .card-item {
         flex-direction: column-reverse;
+        justify-content: space-around;
         padding: 1rem;
         margin: 1rem;
     }
@@ -236,5 +238,6 @@ button {
         height: 150px;
         margin-left: 2rem;
         border-radius: 0.5rem;
+        float: right;
     }
 }
