@@ -40,7 +40,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    max-width: 900px;
+    max-width: 800px;
     min-height: 500px;
     width: 100%;
     padding: 1rem;
@@ -92,22 +92,67 @@ body {
 /* right section */
 
 .right-section {
-    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    /* width: 600px; */
 }
 .right-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
 }
 
-.nav-steps {
-    bottom: 0;
-    right: 0;
-}
-
+/* step 1 */
 .step-1 {
-    
+    width: 100%;
 }
+
+.right-container h2 {
+    font-size: 2rem;
+    color: var(--Marine-blue);
+}
+.right-container p {
+    color: var(--Cool-gray);
+    font-size: 0.8rem;
+    margin: 1rem 0;
+}
+
+form div {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+form div label {
+    color: var(--Marine-blue);
+    margin-bottom: 0.3rem;
+}
+
+form div input {
+    padding: 0.7rem 1rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    border: 2px solid var(--Light-gray);
+    outline: none;
+}
+
+form .next {
+    float: right;
+    padding: 0.8rem 1.5rem;
+    color: var(--White);
+    background-color: var(--Marine-blue);
+    border: none;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--Purplish-blue);
+    }
+}
+
 .step-2 {
     display: none;
 }
