@@ -33,6 +33,7 @@ function validateForm() {
     isValid = false;
   } else {
     errorName.textContent = "";
+    name.style.border = "1px solid #8e8593"
   }
 
   const cardNo = document.getElementById("card-Number");
@@ -48,6 +49,7 @@ function validateForm() {
     errorNo.textContent = "Card number must be 16 Numbers";
   } else {
     errorNo.textContent = "";
+    cardNo.style.border = "1px solid #8e8593"
   }
 
   const cvc = document.getElementById("cvc");
@@ -58,6 +60,24 @@ function validateForm() {
     isValid = false;
   } else {
     errorCVC.textContent = "";
+    cvc.style.border = "1px solid #8e8593"
+
   }
+<<<<<<< HEAD
+=======
+
+  const errorDate = document.getElementById('error-date');
+  if(year.value === '' || month.value === '') {
+    errorDate.textContent = "Can't be blank";
+    year.style.border = "1px solid red"
+    month.style.border = "1px solid red"
+    isValid = false;
+  } else {
+    errorDate.textContent = '';
+    year.style.border = "1px solid #8e8593"
+    month.style.border = "1px solid #8e8593"
+  }
+
+>>>>>>> 0725a4fb87f902f9ea40d2d25f77584c59ccecac
   return isValid;
 }
