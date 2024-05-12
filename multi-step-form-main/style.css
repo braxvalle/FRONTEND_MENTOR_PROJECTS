@@ -40,7 +40,7 @@ body {
 .container {
     display: flex;
     justify-content: center;
-    max-width: 800px;
+    max-width: 750px;
     min-height: 500px;
     width: 100%;
     padding: 1rem;
@@ -94,25 +94,23 @@ body {
 .right-section {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 2rem;
-    /* width: 600px; */
-}
-.right-container {
-    padding: 0 2rem;
+    max-width: 500px;
     width: 100%;
 }
 
 /* step 1 */
 .step-1 {
+    display: none;
     width: 100%;
 }
 
-.right-container h2 {
+.right-section h2 {
     font-size: 2rem;
     color: var(--Marine-blue);
 }
-.right-container p {
+.right-section p {
     color: var(--Cool-gray);
     font-size: 0.8rem;
     margin: 1rem 0;
@@ -154,8 +152,72 @@ form .next {
 }
 
 .step-2 {
-    display: none;
+    /* display: none; */
+    width: 100%;
+    padding: 1rem;
 }
+
+.step-2 .card-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card-items .card {
+    max-width: 125px;
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid var(--Pastel-blue);
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        border: 2px solid var(--Marine-blue);
+    }
+}
+
+.card img {
+    margin-bottom: 2rem;
+}
+
+.card h3 {
+    font-size: 0.9rem;
+}
+.card p {
+    margin: 0.2rem;
+}
+
+.switcher {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.slider {
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: var(--Marine-blue);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.slider .circle {
+    height: 16px;
+    width: 16px;
+    background-color: var(--White);
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
 .step-3 {
     display: none;
 }
@@ -164,4 +226,39 @@ form .next {
 }
 .thank-you {
     display: none;
+}
+
+.btns {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btns .next {
+    padding: 0.8rem 1.5rem;
+    color: var(--White);
+    background-color: var(--Marine-blue);
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--Purplish-blue);
+    }
+}
+
+.btns .back {
+    background-color: transparent;
+    border: none;
+    color: var(--Marine-blue);
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        color: var(--Purplish-blue);
+    }
 }
