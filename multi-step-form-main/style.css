@@ -267,7 +267,39 @@ form .next {
 }
 .step-4 {
     /* display: none; */
+    width: 100%;
+    padding: 1rem;
 }
+.finishing {
+    background-color: var(--Alabaster);
+    border-radius: 0.5rem;
+}
+.finish-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    cursor: pointer;
+    &:hover {
+        color: var(--Marine-blue);
+    }
+}
+
+.finish-text h4 {
+    color: var(--Cool-gray);
+}
+
+.finish-item h4 {
+    color: var(--Cool-gray);
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
 .thank-you {
     display: none;
 }
