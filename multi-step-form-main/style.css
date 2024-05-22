@@ -104,7 +104,7 @@ body {
 
 /* step 1 */
 .step-1 {
-    display: none;
+    /* display: none; */
     width: 100%;
 }
 
@@ -266,7 +266,7 @@ form .next {
     font-weight: 500;
 }
 .step-4 {
-    /* display: none; */
+    display: none;
     width: 100%;
     padding: 1rem;
 }
