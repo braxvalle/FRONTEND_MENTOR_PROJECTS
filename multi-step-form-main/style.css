@@ -99,13 +99,14 @@ body {
     padding: 2rem;
     margin: 0 2rem;
     max-width: 500px;
+    min-height: 550px;
     width: 100%;
 }
 
 /* step 1 */
 .step-1 {
-    /* display: none; */
     width: 100%;
+    padding: 1rem;
 }
 
 .right-section h2 {
@@ -153,8 +154,9 @@ form .next {
     }
 }
 
+/* step 2 */
+
 .step-2 {
-    display: none;
     width: 100%;
     padding: 1rem;
 }
@@ -223,15 +225,13 @@ form .next {
     top: 0;
 }
 
+/* step 3 */
+
 .step-3 {
-    display: none;
     width: 100%;
     padding: 1rem;
 }
 
-.checks {
-
-}
 
 .check-item {
     display: flex;
@@ -265,11 +265,14 @@ form .next {
     color: var(--Purplish-blue);
     font-weight: 500;
 }
+
+/* step 4 */
+
 .step-4 {
-    display: none;
     width: 100%;
     padding: 1rem;
 }
+
 .finishing {
     background-color: var(--Alabaster);
     border-radius: 0.5rem;
@@ -294,15 +297,48 @@ form .next {
 }
 
 .totals {
-    display: flex;
+    /* display: flex; */
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 
+/* Thank you section */
+
 .thank-you {
+    padding: 1rem;
+    width: 100%;
+}
+
+.thank-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.thank-item img {
+    margin-bottom: 1rem;
+}
+.thank-item p {
+    max-width: 350px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 0.1rem;
+}
+
+/* active states */
+
+.step {
     display: none;
 }
+
+.active {
+    display: block;
+}
+
+/* buttons stylings */
 
 .btns {
     width: 100%;
@@ -337,4 +373,8 @@ form .next {
     &:hover {
         color: var(--Purplish-blue);
     }
+}
+
+.btns:focus {
+    border-color: var(--Light-gray);
 }
