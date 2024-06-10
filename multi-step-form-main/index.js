@@ -1,7 +1,7 @@
 const next = document.getElementById("nextBtn");
 const back = document.getElementById("backBtn");
 const steps = document.querySelectorAll(".step");
-let currentStep = 1;
+let currentStep = 0;
 
 function updateStep(step) {
   steps.forEach((s, index) => {
@@ -22,7 +22,7 @@ next.addEventListener('click', () => {
 })
 
 back.addEventListener('click', () => {
-  if (currentStep > 1) {
+  if (currentStep > 0) {
     updateStep(currentStep - 1)
   }
 })
@@ -44,3 +44,10 @@ slider.addEventListener('click', () => {
   }
 });
 
+//form section
+const form = document.querySelector('#form');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault()
+  console.log('submiteed')
+})
