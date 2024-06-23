@@ -4,50 +4,49 @@ const steps = document.querySelectorAll(".step");
 let currentStep = 0;
 
 function updateStep(step) {
-  steps.forEach((s, index) => {
+  steps.forEach((S, index) => {
     if (index === step) {
-      s.classList.add('active');
+      S.classList.add("active");
     } else {
-      s.classList.remove('active');
+      S.classList.remove("active");
     }
   });
   currentStep = step;
 }
 
-
-next.addEventListener('click', () => {
-  if(currentStep < steps.length) {
-    updateStep(currentStep + 1)
+next.addEventListener("click", () => {
+  if (currentStep < steps.length) {
+    updateStep(currentStep + 1);
   }
-})
+});
 
-back.addEventListener('click', () => {
+back.addEventListener("click", () => {
   if (currentStep > 0) {
-    updateStep(currentStep - 1)
+    updateStep(currentStep - 1);
   }
-})
+});
 
 // Toggle button functions:
-const slider = document.querySelector('.slider');
-const months = document.querySelector('.swi-month');
-const years = document.querySelector('.swi-year');
+const slider = document.querySelector(".slider");
+const months = document.querySelector(".swi-month");
+const years = document.querySelector(".swi-year");
 
-slider.addEventListener('click', () => {
-  slider.classList.toggle('clicked')
+slider.addEventListener("click", () => {
+  slider.classList.toggle("clicked");
 
-  if(slider.classList.contains('clicked')) {
-    months.classList.add('active')
-    years.classList.remove('active')
+  if (slider.classList.contains("clicked")) {
+    months.classList.add("active");
+    years.classList.remove("active");
   } else {
-    months.classList.remove('active')
-    years.classList.add('active')
+    months.classList.remove("active");
+    years.classList.add("active");
   }
 });
 
 //form section
-const form = document.querySelector('#form');
+const form = document.querySelector("#form");
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault()
-  console.log('submiteed')
-})
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  console.log("submiteed");
+});
