@@ -48,16 +48,25 @@
             <div class="inputs">
               <form action="#" id="form">
                 <div>
-                  <label for="name">Name</label>
-                  <input type="text" id="name" placeholder="e.g.Stephen King">
+                  <div class="lable">
+                    <label for="name">Name</label>
+                    <p id="error-name"></p>
+                  </div>
+                  <input type="text" id="name" id="name" placeholder="e.g.Stephen King">
                 </div>
                 <div>
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" placeholder="e.g. stephenking@lorem.com">
+                  <div class="lable">
+                    <label for="email">Email Address</label>
+                    <p id="error-email"></p>
+                  </div>
+                  <input type="email" id="email" id="email" placeholder="e.g. stephenking@lorem.com">
                 </div>
                 <div>
-                  <label for="phone">Phone Number</label>
-                  <input type="phone" id="phone" placeholder="e.g. +1 234 567 890">
+                  <div class="lable">
+                    <label for="phone">Phone Number</label>
+                    <p id="error-phone"></p>
+                  </div>
+                  <input type="phone" id="phone" id="phone" placeholder="e.g. +1 234 567 890">
                 </div>
                 <button class="next" id="nextBtn">Next Step</button>
               </form>
@@ -93,8 +102,8 @@
               <p class="swi-year">Yearly</p>
             </div>
             <div class="btns">
-              <button class="back" id="backBtb">Go Back</button>
-              <button class="next" id="nextBtn">Next Step</button>
+              <button class="back backBtn">Go Back</button>
+              <button class="next nextBtn">Next Step</button>
             </div>
           </div>
 
@@ -135,11 +144,10 @@
               </div>
             </div>
               <div class="btns">
-                <button class="back" id="backBtn">Go Back</button>
-                <button class="next" id="nextBtn">Next Step</button>
+                <button class="back backBtn">Go Back</button>
+                <button class="next nextBtn">Next Step</button>
               </div>
           </div>
-
 
           <div class="step step-4">
             <h2>Finishing up</h2>
@@ -172,11 +180,12 @@
               <span>$120/yr</span>
             </div>
               <div class="btns">
-                <button class="back" id="backBtn">Go Back</button>
-                <button class="next" id="nextBtn">Next Step</button>
+                <button class="back backBtn">Go Back</button>
+                <button class="next nextBtn">Next Step</button>
               </div>
           </div>
-          <div class="thank-you step">
+
+          <div class="step step-5">
             <div class="thank-item">
               <img src="./assets/images/icon-thank-you.svg" alt="thankyou">
               <h2>Thank you!</h2>
