@@ -41,8 +41,6 @@ body {
     display: flex;
     justify-content: center;
     max-width: 800px;
-    /* max-height: 500px; */
-    /* height: 100%; */
     width: 100%;
     padding: 1rem;
     background-color: var(--White);
@@ -61,7 +59,6 @@ body {
 .sidebar-item {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     margin: 1rem 0;
 }
 
@@ -103,7 +100,6 @@ body {
 .right-section {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     padding: 2rem;
     margin: 0 2rem;
     max-width: 500px;
