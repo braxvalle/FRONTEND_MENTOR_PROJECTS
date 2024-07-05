@@ -107,7 +107,6 @@ body {
     position: absolute;
     top: -4rem;
     right: -7rem;
-    z-index: 100;
     opacity: 0;
 }
 
@@ -135,4 +134,32 @@ body {
 
 .share-icons.active {
     opacity: 1;
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .left-img {
+        border-radius: 0;
+        width: 375px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .share {
+        display: block;
+        width: 100%;
+    }
+
+    .share-icons {
+        bottom: 0;
+        right: 0;
+        top: 0;
+        max-width: 375px;
+        width: 100%s;
+    }
 }
