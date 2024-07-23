@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    background-color: var(--Grayish-Blue);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 1rem;
+}
+
+.left-img {
+    max-width: 350px;
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.right-article {
+    max-width: 500px;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+.right-article h2 {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.right-article p{
+    margin: 1rem 0;
+    color: var(--Grayish-Blue);
+    font-size: 13px;
+}
+
+.profile {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.profile-img img {
+    width: 60px;
+    border-radius: 50%;
+}
+
+.names p{
+    margin: 0.1rem 0;
+}
+
+.share {
+    position: relative;
+}
+
+.share button {
+    background-color: var(--Light-Grayish-Blue);
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: var(--Very-Dark-Grayish-Blue);
+        color: var(--Light-Grayish-Blue);
+    }
+}
+
+.share-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0.5rem;
+    width: 250px;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: -4rem;
+    right: -7rem;
+    opacity: 0;
+}
+
+.share-icons p {
+    padding: 0 1rem;
+    margin: 0.2;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    position: absolute;
+
+    border-top: 10px solid var(--Very-Dark-Grayish-Blue);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: -10px;
+}
+
+.share-icons img{
+    padding: 0.5rem;
+    background-color: none;
+    width: 35px;
+}
+
+.share-icons.active {
+    opacity: 1;
+}
+
+@media (max-width: 375px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .left-img {
+        border-radius: 0;
+        width: 375px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .share {
+        display: block;
+        width: 100%;
+    }
+
+    .share-icons {
+        bottom: 0;
+        right: 0;
+        top: 0;
+        max-width: 375px;
+        width: 100%s;
+    }
+}
